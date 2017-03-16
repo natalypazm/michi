@@ -1,11 +1,15 @@
 *{
 	font-family: 'Indie Flower', cursive;
-	outline:1px solid green;
+
+	
 	
 	
 }
 body{
-	background: url(../image/pac.jpg);
+	background: url(../image/pac.jpg)no-repeat;
+	background-size:400%;
+	background-position:right;
+
 	
 
 }
