@@ -1,0 +1,4 @@
+[0310/124642.062:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: Se está cerrando la canalización. (0xE8)
+[0314/134753.641:ERROR:process_reader_win.cc(233)] ReadMemory at 0x197d1f38 of 512 bytes failed: Sólo se completó una parte de una solicitud ReadProcessMemory o WriteProcessMemory. (0x12B)
+[0314/134753.744:ERROR:crash_report_exception_handler.cc(111)] WriteEverything failed
+[0316/132731.914:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: Se está cerrando la canalización. (0xE8)

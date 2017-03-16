@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>michi</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/icomoon.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/queries.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="fonts/icon/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+<body class="text-center">
+	<div class="container">
+			<nav class="nav">
+				<div class="navbar-header">
+			  		<button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			  			<span class="sr-only">Toggle navigation</span>
+			    		<i class="fa fa-navicon"></i>
+			 	 	</button>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ba>
+					<ul class="nav navbar-nav navbar-right list-inline">
+						<li><a href="#"><h4>Inicio</h4></a></li>
+						<li><a id="btn-historial"><h4>Historial</h4></a></li>
+					</ul>
+				</div>
+			</nav>
+		<section id="saludo">
+			<h1>Bienvenido a gato loco</h1><br>
+			<div style="margin:3% auto"><a id="btn-saludo" class="iniciar">Iniciar Juego</a></div>
+		</section>
+
+		<section id="nombres" class="jugadores" style="display:none">
+			<label>
+				<div class="row"><p class="col-md-7">Ingrese el nombre del jugador 1</p> <input id="uno" class="col-md-5" type="text" placeholder="nombre"></div><br>
+				<div class="row"><p class="col-md-7">Ingrese el nombre del jugador 2</p> <input id="dos" class="col-md-5" type="text" placeholder="nombre"></div>
+			</label>
+			<div style="margin:3% auto"><a id="btn-nombres" class="iniciar">Comenzar</a></div>
+		</section>
+
+		<section id="juego" class="turno" style="display:none">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+			<select id="selectorColor">
+	        <option>Black</option>
+	        <option>Blue</option>
+	        <option>Fuchsia</option>
+	        <option>Green</option>
+	        <option>Lime</option>
+	        <option>Maroon</option>
+	        <option>Navy</option>
+	        <option>Olive</option>
+	        <option>Orange</option>
+	        <option>Purple</option>
+	        <option>Red</option>
+	        <option>Silver</option>
+	        <option>Teal</option>
+	        <option>Yellow</option>
+	    </select>
+	    <br>
+	    <button id="botonColorAzar">colores al azar</button>
+	    <br>
+	    <button id="botonIntercambiarColores">Intercambiar colores</button>
+	    <br>
+	    <button id="botonColor1">1er jugador</button>
+	    <div class="muestracolor" id="colorelegido1"></div>
+
+	    <button id="botonColor2">2do jugador</button>
+	    <div class="muestracolor" id="colorelegido2"></div>
+	    <button id="botonEmpezar">empezar</button>
+	    <br>
+	    <button id="botonFinalizar">finalizar</button>
+	    <div id="contenedorTabla">
+	        <table id="tablero">
+	            <tr>
+	                <td id="celda1"></td>
+	                <td id="celda2"></td>
+	                <td id="celda3"></td>
+	            </tr>
+	            <tr>
+	                <td id="celda4"></td>
+	                <td id="celda5"></td>
+	                <td id="celda6"></td>
+	            </tr>
+	            <tr>
+	                <td id="celda7"></td>
+	                <td id="celda8"></td>
+	                <td id="celda9"></td>
+	            </tr>
+       		 </table>
+        <p id="texto"></p>
+    </div>
+				<p id="texto"></p>
+			</div>
+			<div class="col-md-4" style="margin:9% auto">
+				<div class="row"><p class="col-md-9">Movimiento</p><p class="col-md-3">" "</p></div><br>
+				<div class="row"><p class="col-md-9">Movimiento</p><p class="col-md-3">" "</p></div>
+			</div>
+		
+
+		</section>
+		<section class="historial-detalle" style="display:none">
+			<div></div>
+		</section>
+	</div>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</html>

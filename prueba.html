@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+
+
+<div id="page-wrapper">
+  <!-- HEADER -->
+  <header id="header-wrapper">
+    <nav class="navbar">
+    <div id="header" class="container">
+      <div class="row">
+        <!-- LOGO -->
+        <div class="col-xs-12">
+          <div class="navbar-header">
+           <button id="rmenu" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gnav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <h1><a href="/">Balsamiq</a></h1>
+        </div>
+        <!-- GNAV -->
+        <div class="collapse navbar-collapse" id="gnav">
+          <ul class="menubar gnav nav navbar row" style="display:inline-block">
+            <li id="gnav-home" class="visible-xs">
+              <a href="/" class="gnava">Home</a>
+            </li>
+            <li id="gnav-products">
+              <a href="/products/mockups/" class="gnava">Products</a>
+            </li>
+            <li id="gnav-company">
+              <a href="/company/" class="gnava">Company</a>
+            </li>
+            <li id="gnav-support">
+              <a href="https://support.balsamiq.com/" class="gnava">Support</a>
+            </li>
+            <li id="gnav-blogs">
+              <a href="https://blog.balsamiq.com/" class="gnava">Blog</a>
+            </li>
+            <li id="gnav-download">
+              <a href="/download/" class="gnava">Download</a>
+            </li>
+            <li id="gnav-buy">
+              <a href="/buy/" class="gnava">Buy</a>
+            </li>
+            <li id="gnav-login" class="dropdown hidden-xs">
+              <a id="loginButton" class="gnava dropdown-toggle" href="#" data-toggle="dropdown"><span>Log In</span></a>
+              <!-- LOGIN -->
+              <div id="loginBox" class="dropdown-menu t14">
+                <form id="loginForm">
+                  <fieldset id="body">
+                    <div class="m0">
+                      <p class="m0 mb1"><strong>Lost your Mockups key?</strong></p>
+                      <p class="mb1">
+                        <a href="/buy/lostkey/" class="button submit">Retrieve Your License</a>
+                      </p>
+                    </div>
+                    <hr>
+                    <p class="mt1 mb0"><strong>Log In to myBalsamiq</strong></p>
+                    <fieldset class="mb1">
+                      <p>Already have a monthly subscription for our cloud-based web app?</p>
+                      <p class="mb0">
+                        <a href="https://www.mybalsamiq.com/login" class="button submit">Log In to myBalsamiq</a>
+                      </p>
+                    </fieldset>
+                  </fieldset>
+                </form>
+              </div>
+              <!-- /LOGIN -->
+            </li>
+            <li id="gnav-login" class="visible-xs"><a href="https://www.mybalsamiq.com/login" class="gnava">Log In to myBalsamiq</a></li>
+            <li id="gnav-lostkey" class="visible-xs"><a href="/buy/lostkey/" class="gnava">Retrieve Lost License</a></li>
+            <li id="gnav-search" class="visible-xs visible-sm">
+              <a href="/search/" class="gnava"><span class="visible-sm hidden-xs"><i class="ss-icon ss-search"></i></span><span class="visible-xs hidden-sm">Search</span></a>
+            </li>
+            <li id="gnav-search-form" class="hidden-xs hidden-sm last relative">
+              <!-- SEARCH -->
+              <div id="search">
+                <form action="/search/" class="search" method="get">
+                  <div id="searchInNav">
+                    <input id="s" accesskey="s" type="text" placeholder="Search..." name="q" tabindex="1" autocomplete="off"/>
+                    <input id="ss" type="submit" value="Search" tabindex="2" />
+                  </div>
+                </form>
+                <script type="text/javascript">
+                  BalsamiqSearchAutoComplete.initAutoCompleteInputDiv("searchInNav");
+                </script>
+                <!-- /SEARCH -->
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- /#GNAV -->
+        </div>
+      </div><!--/ .row -->
+    </div><!-- /#header -->
+    </nav>
+  </header><!-- /#header-wrapper -->
+ 
+	
+</body>
+</html>
