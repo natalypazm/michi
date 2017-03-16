@@ -12,11 +12,14 @@ function init()
     $('#btn-historial').click(onClickBtnHistorial);
     $('#btn-comentar').click(onClickBtnComentar);
     $('#lista-juegos').on('click','button',onClickBtnItemJuego);
+    $('#btn-inicio').click(inicio);
     
     TweenMax.from($('#saludo h1'), 1, {marginBottom:'0px', ease:Elastic.easeOut});
 }
 
-
+function inicio(){
+     location.reload();
+}
 function onClickBtnItemJuego(){
     var idGame=($(this).parent().data('idgame'));
     gotoSection('historial-detalle');
@@ -35,6 +38,9 @@ function onClickBtnHistorial(evt){
     
     evt.preventDefault();
     gotoSection('historial');
+     $('#saludo').css("display","none");
+        $('#historial').css("display","table");
+    $('#historial-detalle').css("display","table");
     getHistorial();
     
 }
@@ -150,7 +156,7 @@ function dibujarComentarios(_datos) {
 
 
 
-
+//juego
 var color1 = "orange";
 var color2 = "silver";
 var jugador = 1;

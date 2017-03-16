@@ -24,7 +24,7 @@
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ba>
 					<ul class="nav navbar-nav navbar-right list-inline">
-						<li><a href="#"><h4>Inicio</h4></a></li>
+						<li><a id="btn-inicio"><h4>Inicio</h4></a></li>
 						<li><a id="btn-historial"><h4>Historial</h4></a></li>
 					</ul>
 				</div>
@@ -103,9 +103,27 @@
 		
 
 		</section>
-		<section class="historial-detalle" style="display:none">
-			<div></div>
-		</section>
+		 <section id="historial" style="display: none" >
+	<div class="content">
+		<div class="container">
+			<h2>Historial</h2>
+			<ul class="list-group" id="lista-juegos"></ul>
+		</div>
+	</div>
+</section>
+    
+    <section id="historial-detalle" style="display:none">
+	<div class="content">
+		<div class="container">
+			<h2 id="title">Historial detalle</h2>
+			<ul class="list-group" id="lista-comentarios"></ul>
+			<input id="name" type="text" class="form-control">
+			<textarea name="content" id="content" cols="30" rows="10" class="form-control"></textarea>
+			<br>
+			<button id="btn-comentar" class="w-M br-0 stl-1-blue">Comentar</button>
+		</div>
+	</div>
+</section>
 	</div>
 
 
